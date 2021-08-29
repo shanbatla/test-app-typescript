@@ -1,3 +1,5 @@
+import Divider from "./Divider"
+
 interface Props {
   list: Array<string>
 }
@@ -15,6 +17,7 @@ const List: React.FC<Props> = ({ list }): JSX.Element => {
           {listItems}
         </ul>
       </div>
+      <Divider/>
     </>
   )
 }
