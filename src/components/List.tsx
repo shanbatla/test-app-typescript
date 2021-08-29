@@ -8,9 +8,14 @@ const List: React.FC<Props> = ({ list }): JSX.Element => {
   })
 
   return (
-    <ul>
-      {listItems}
-    </ul>
+    <>
+      <h2>List</h2>
+      <div>
+        <ul>
+          {listItems}
+        </ul>
+      </div>
+    </>
   )
 }
 
