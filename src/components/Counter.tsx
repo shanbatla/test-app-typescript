@@ -1,4 +1,5 @@
 import React from "react";
+import Divider from "./Divider";
 
 interface Props {
   initialCount: number
@@ -33,6 +34,7 @@ export default class Counter extends React.Component<Props, State> {
           </div>
           <button onClick={this.incrementCounter}>Increment</button>
         </div>
+        <Divider/>
       </>
     )
   }
