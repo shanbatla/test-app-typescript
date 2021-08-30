@@ -4,8 +4,8 @@ interface Props {
   list: Array<string>
 }
 
-const List: React.FC<Props> = ({ list }): JSX.Element => {
-  const listItems = list.map(listItem => {
+const List = (props: Props): JSX.Element => {
+  const listItems = props.list.map(listItem => {
     return <li> {listItem} </li>
   })
 
