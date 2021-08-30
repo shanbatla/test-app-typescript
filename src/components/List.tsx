@@ -1,10 +1,10 @@
 import Divider from "./Divider"
 
-interface Props {
+interface ListProps {
   list: Array<string>
 }
 
-const List = (props: Props): JSX.Element => {
+const List = (props: ListProps): JSX.Element => {
   const listItems = props.list.map(listItem => {
     return <li> {listItem} </li>
   })
