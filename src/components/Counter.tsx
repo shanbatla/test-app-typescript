@@ -1,16 +1,16 @@
 import React from "react";
 import Divider from "./Divider";
 
-interface Props {
+interface CounterProps {
   initialCount: number
 }
 
-interface State {
+interface CounterState {
   count: number
 }
 
-export default class Counter extends React.Component<Props, State> {
-  constructor(props: Props) {
+export default class Counter extends React.Component<CounterProps, CounterState> {
+  constructor(props: CounterProps) {
     super(props)
     this.state = {
       count: this.props.initialCount
