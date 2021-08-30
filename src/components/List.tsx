@@ -5,8 +5,8 @@ interface ListProps {
 }
 
 const List = (props: ListProps): JSX.Element => {
-  const listItems = props.list.map(listItem => {
-    return <li> {listItem} </li>
+  const listItems = props.list.map( (listItem, idx) => {
+    return <li key={idx}>{listItem}</li>
   })
 
   return (
